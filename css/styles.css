@@ -59,6 +59,11 @@ p {
   color: inherit;
   text-decoration: none;
 }
+.nav-style {
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .nav-block nav {
   display: inline;
 }
@@ -69,11 +74,7 @@ p {
 .nav-block li {
   display: inline;
 }
-.nav-style {
-  justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
+
 .line hr {
   border: 1px solid #ececec;
   margin: 0;
@@ -370,6 +371,7 @@ h2 {
   transition-property: fill, var(--background-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
 }
 .app-icons:hover,
 .app-icons:focus,
@@ -693,7 +695,7 @@ h2 {
   opacity: 1;
 }
 .checkbox-box-style {
-  accent-color: white;
+  appearance: none;
 }
 .checkbox-btn {
   display: flex;
@@ -703,16 +705,23 @@ h2 {
   place-items: center;
   justify-content: center;
   padding-top: 20px;
-  margin-left: 10px;
 }
 .svg-check-position {
   opacity: 0;
-  position: absolute;
-  left: 55px;
+  position: relative;
+  right: 16px;
   cursor: pointer;
   background-color: var(--main-color);
   border-radius: 2px;
-  margin-top: 4px;
+  margin-top: 3px;
+}
+.btn-svg {
+  border: 2px solid rgba(33, 33, 33, 1);
+  width: 16px;
+  height: 15px;
+  margin-top: 3px;
+  margin-left: 11px;
+  border-radius: 3px;
 }
 .terms-style {
   font-weight: 400;
@@ -720,7 +729,7 @@ h2 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  padding-left: 8px;
+  margin-left: -7px;
 }
 .sub-style {
   padding-left: 173px;
